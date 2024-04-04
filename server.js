@@ -12,5 +12,5 @@ const server = app.listen( PORT || 8080, () => {
 })
 
 process.on('SIGINT', () => {
-    server.close( () => console.log(`exits server express`))
+    server.close( () => console.log(`exits server express version 1`))
 })
