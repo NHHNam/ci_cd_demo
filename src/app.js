@@ -14,6 +14,13 @@ app.get('/', (req, res) => {
     })
 });
 
+app.get('/health', (req, res) => {
+    return res.json({
+        code: 200,
+        message: "All thing is good"
+    })
+})
+
 app.get('/status', (req, res) => {
     return res.json({
         code: 200,
